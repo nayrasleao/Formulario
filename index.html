@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Dev</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+      <h1>Cadastro - Vem Ser Tech</h1>
+    </header>
+
+    <main>
+        <form action="https://nocodeform.io/f/652da34794039c17eca3a59a" method="post">
+          <ul>
+            <li>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"
+                       pattern=".{3,}" required
+                       oninvalid="this.setCustomValidity('Nome deve conter 5 ou mais caracteres');">
+            </li>
+            <li>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </li>
+            <li>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required
+                       oninvalid="this.setCustomValidity('Idade é obrigatória');">
+            </li>
+            <li>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"
+                       pattern=".{6,}" required
+                       oninvalid="this.setCustomValidity('Senha deve ter pelo menos 6 caracteres');">
+            </li>
+            <li>
+                <label for="cor">Cor Favorita:</label>
+                <input type="color" id="cor" name="cor" value="#000000">
+            </li>
+        </ul>
+  
+          <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+      <p>&copy; Desenvolvido por Nayra Leão 2023.</p>
+    </footer>
+    
+</body>
+</html>
